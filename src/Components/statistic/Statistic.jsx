@@ -1,16 +1,28 @@
 import PropTypes from "prop-types";
-import scss from "./Statistic.module.scss";
+import css from "./Statistic.module.css";
 
 const Statistic = ({ stats }) => (
-  <ul class="stat-list">
+  <ul className={css.statist}>
     {stats.map((stat) => (
-      <li class="item" key={stat.id}>
-        <span class="label">{stat.label}</span>
-        <span class="percentage">{stat.percentage}</span>
+      <li
+        className={css.item}
+        key={stat.id}
+        style={{ backgroundColor: randomColor() }}
+      >
+        <span className={css.label}>{stat.label}</span>
+        <span className={css.percentage}>{stat.percentage}</span>
       </li>
     ))}
   </ul>
 );
+
+const randomColor = () => {
+  return `rgb(
+    ${Math.floor(Math.random() * 250)}
+    ${Math.floor(Math.random() * 250)}
+    ${Math.floor(Math.random() * 250)}
+  )`;
+};
 
 export default Statistic;
 

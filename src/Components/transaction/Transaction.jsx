@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-import scss from "./Transaction.module.scss";
+import css from "./Transaction.module.css";
 
 const Transactions = ({ transactions }) => {
   return (
-    <table class="transaction-history">
+    <table className={css.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>

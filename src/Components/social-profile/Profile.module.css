@@ -1,0 +1,46 @@
+.profile {
+  padding: 20px;
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+  border: 1px solid tomato;
+}
+.description {
+  margin: 0 auto;
+  width: 300px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.avatar {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+
+  border-radius: 50%;
+
+  background-color: tomato;
+}
+.name {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 25px;
+}
+.tag {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.location {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.stats {
+  margin-top: 10px;
+}
+
+.statsItem:not(:last-child) {
+  margin-bottom: 10px;
+}
