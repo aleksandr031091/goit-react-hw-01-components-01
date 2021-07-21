@@ -1,0 +1,32 @@
+.transactionHistory {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1000px;
+
+  background-color: white;
+  box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 1);
+
+  border-radius: 2px;
+}
+
+.tHead {
+  color: white;
+  background-color: tomato;
+  text-transform: uppercase;
+}
+.tHeadItem {
+  padding: 10px;
+}
+
+.tBody {
+  background-color: snow;
+}
+
+.tBodyTr:nth-child(2n) {
+  background-color: silver;
+}
+
+.tBodyTd {
+  padding: 10px;
+  text-align: center;
+}

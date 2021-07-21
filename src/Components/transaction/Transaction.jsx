@@ -4,20 +4,20 @@ import css from "./Transaction.module.css";
 const Transactions = ({ transactions }) => {
   return (
     <table className={css.transactionHistory}>
-      <thead>
+      <thead className={css.tHead}>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={css.tHeadItem}>Type</th>
+          <th className={css.tHeadItem}>Amount</th>
+          <th className={css.tHeadItem}>Currency</th>
         </tr>
       </thead>
 
-      <tbody>
+      <tbody className={css.tBody}>
         {transactions.map((transaction) => (
-          <tr key={transaction.id}>
-            <td>{transaction.type}</td>
-            <td>{transaction.amount}</td>
-            <td>{transaction.currency}</td>
+          <tr className={css.tBodyTr} key={transaction.id}>
+            <td className={css.tBodyTd}>{transaction.type}</td>
+            <td className={css.tBodyTd}>{transaction.amount}</td>
+            <td className={css.tBodyTd}>{transaction.currency}</td>
           </tr>
         ))}
       </tbody>

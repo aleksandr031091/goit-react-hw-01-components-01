@@ -21,9 +21,13 @@ const App = () => (
       <Statistic stats={data.statistical} />
     </Section>
 
-    <FriendsList friends={data.friends} />
+    <Section title="friends">
+      <FriendsList friends={data.friends} />
+    </Section>
 
-    <Transactions transactions={data.transacrions} />
+    <Section title="Transactions">
+      <Transactions transactions={data.transacrions} />
+    </Section>
   </>
 );
 
